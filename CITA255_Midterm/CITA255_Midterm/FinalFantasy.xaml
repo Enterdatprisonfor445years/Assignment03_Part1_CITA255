@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CITA255_Midterm.FinalFantasy"
+             Title="FinalFantasy">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Image Source="finalfantasy.jpg"
+                HorizontalOptions="Center"/>
+            <Label Text="Final Fantasy: Rebirth"/>
+            <Label Text="$33.24"/>
+            <Label Text="Action Adventure JRPG"/>
+            <Label Text="In Stock"/>
+            <Entry
+             x:Name="QtyEntry"
+             Placeholder="Enter a Quantity!"/>
+            <Button
+             Text="Add to Cart"
+             Clicked="Button_Clicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

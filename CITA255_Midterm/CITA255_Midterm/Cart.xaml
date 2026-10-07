@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CITA255_Midterm.Cart"
+             Title="Cart">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label Text="Your Cart"
+                   FontSize="Subtitle"
+                   TextColor="Crimson"/>
+            <Label Text="Cart Empty!"/>
+            <Label Text="Total: $0.00"/>
+            <Button x:Name="CheckoutButton"
+                Text="Checkout"
+                Clicked="CheckoutCLicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CITA255_Midterm.MonsterHunter"
+             Title="MonsterHunter">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Image Source="monsterhunter.jpg"
+                HorizontalOptions="Center"/>
+            <Label Text="Monster Hunter Wilds"/>
+            <Label Text="$39.99"/>
+            <Label Text="Action Adventure Open-World"/>
+            <Label Text="In Stock"/>
+            <Entry
+             x:Name="QtyEntry"
+             Placeholder="Enter a Quantity!"/>
+            <Button
+             Text="Add to Cart"
+             Clicked="Button_Clicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

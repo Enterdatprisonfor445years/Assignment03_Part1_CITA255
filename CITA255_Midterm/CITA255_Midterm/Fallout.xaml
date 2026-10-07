@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CITA255_Midterm.Fallout"
+             Title="Fallout">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Image Source="fallout.jpg"
+                HorizontalOptions="Center"/>
+            <Label Text="Fallout New Vegas"/>
+            <Label Text="$9.99"/>
+            <Label Text="Open-World RPG"/>
+            <Label Text="In Stock"/>
+            <Entry
+             x:Name="QtyEntry"
+             Placeholder="Enter a Quantity!"/>
+            <Button
+             Text="Add to Cart"
+             Clicked="Button_Clicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
