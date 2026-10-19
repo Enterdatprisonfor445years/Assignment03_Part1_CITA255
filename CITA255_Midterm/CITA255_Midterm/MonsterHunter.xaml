@@ -6,17 +6,30 @@
     <ScrollView>
         <VerticalStackLayout>
             <Image Source="monsterhunter.jpg"
-                HorizontalOptions="Center"/>
-            <Label Text="Monster Hunter Wilds"/>
-            <Label Text="$39.99"/>
-            <Label Text="Action Adventure Open-World"/>
-            <Label Text="In Stock"/>
+                   HorizontalOptions="Center"/>
+            <Label 
+                Text="Monster Hunter Wilds"
+                Style="{StaticResource GameTitleStyle}"/>
+            <Label 
+                Text="$39.99"/>
+            <Label 
+                Text="Action Adventure Open-World"
+                Style="{StaticResource GameInfoStyle}"/>
+            <Label 
+                Text="In Stock"/>
             <Entry
-             x:Name="QtyEntry"
-             Placeholder="Enter a Quantity!"/>
+                 x:Name="QtyEntry"
+                 Placeholder="Enter a Quantity!"/>
             <Button
-             Text="Add to Cart"
-             Clicked="Button_Clicked"/>
+                x:Name="AddToCartButton"
+                Text="Add to Cart"
+                Clicked="Button_Clicked"
+                Style="{StaticResource AddToCartButtonStyle}"/>
+            <Label 
+                x:Name="MessageLabel" 
+                Text=""
+                HorizontalOptions="Center" 
+                FontAttributes="Bold"/>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

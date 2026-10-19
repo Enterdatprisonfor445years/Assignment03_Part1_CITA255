@@ -6,17 +6,30 @@
     <ScrollView>
         <VerticalStackLayout>
             <Image Source="finalfantasy.jpg"
-                HorizontalOptions="Center"/>
-            <Label Text="Final Fantasy: Rebirth"/>
-            <Label Text="$33.24"/>
-            <Label Text="Action Adventure JRPG"/>
-            <Label Text="In Stock"/>
+                   HorizontalOptions="Center"/>
+            <Label 
+                Text="Final Fantasy: Rebirth"
+                Style="{StaticResource GameTitleStyle}"/>
+            <Label 
+                Text="$33.24"/>
+            <Label 
+                Text="Action Adventure JRPG"
+                Style="{StaticResource GameInfoStyle}"/>
+            <Label 
+                Text="In Stock"/>
             <Entry
-             x:Name="QtyEntry"
-             Placeholder="Enter a Quantity!"/>
+                x:Name="QtyEntry"
+                Placeholder="Enter a Quantity!"/>
             <Button
-             Text="Add to Cart"
-             Clicked="Button_Clicked"/>
+                x:Name="AddToCartButton"
+                Text="Add to Cart"
+                Clicked="Button_Clicked"
+                Style="{StaticResource AddToCartButtonStyle}"/>
+            <Label 
+                x:Name="MessageLabel" 
+                Text=""
+                HorizontalOptions="Center" 
+                FontAttributes="Bold"/>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

@@ -1,18 +1,36 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CITA255_Midterm.Cart"
+             x:Class="CITA255_Midterm.CartPage"
              Title="Cart">
     <ScrollView>
-        <VerticalStackLayout>
-            <Label Text="Your Cart"
-                   FontSize="Subtitle"
-                   TextColor="Crimson"/>
-            <Label Text="Cart Empty!"/>
-            <Label Text="Total: $0.00"/>
+        <VerticalStackLayout Padding ="20" Spacing="15">
+            <Label Text="Your Cart" 
+               FontSize="24" 
+               FontAttributes="Bold" 
+               HorizontalOptions="Center"/>
+
+            <CollectionView x:Name="cartListSection">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <HorizontalStackLayout Padding="10" Spacing="5">
+                            <Label Text="{Binding .}" FontSize="18" />
+                        </HorizontalStackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <Label x:Name="totalSection" 
+               Text="Total: $0.00" 
+               FontSize="20" 
+               FontAttributes="Bold" 
+               HorizontalOptions="End"/>
             <Button x:Name="CheckoutButton"
-                Text="Checkout"
-                Clicked="CheckoutCLicked"/>
+                Text="Complete Checkout"
+                Clicked="OnCheckoutButtonClicked"
+                Style="{StaticResource AddToCartButtonStyle}"
+                HorizontalOptions="Center"
+                WidthRequest="200"/>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

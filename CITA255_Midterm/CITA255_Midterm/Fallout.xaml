@@ -6,17 +6,30 @@
     <ScrollView>
         <VerticalStackLayout>
             <Image Source="fallout.jpg"
-                HorizontalOptions="Center"/>
-            <Label Text="Fallout New Vegas"/>
-            <Label Text="$9.99"/>
-            <Label Text="Open-World RPG"/>
-            <Label Text="In Stock"/>
+                   HorizontalOptions="Center"/>
+            <Label 
+                Text="Fallout New Vegas"
+                Style="{StaticResource GameTitleStyle}"/>
+            <Label 
+                Text="$9.99"/>
+            <Label 
+                Text="Open-World RPG"
+                Style="{StaticResource GameInfoStyle}"/>
+            <Label 
+                Text="In Stock"/>
             <Entry
-             x:Name="QtyEntry"
-             Placeholder="Enter a Quantity!"/>
+                 x:Name="QtyEntry"
+                 Placeholder="Enter a Quantity!"/>
             <Button
-             Text="Add to Cart"
-             Clicked="Button_Clicked"/>
+                x:Name="AddToCartButton"
+                Text="Add to Cart"
+                Clicked="Button_Clicked"
+                Style="{StaticResource AddToCartButtonStyle}"/>
+            <Label 
+                x:Name="MessageLabel" 
+                Text=""
+                HorizontalOptions="Center" 
+                FontAttributes="Bold"/>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

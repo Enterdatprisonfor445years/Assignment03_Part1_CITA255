@@ -15,8 +15,8 @@
 
         <ShellContent
              Title="Cart"
-             ContentTemplate="{DataTemplate local:Cart}"
-             Route="Cart" />
+             ContentTemplate="{DataTemplate local:CartPage}"
+             Route="CartPage" />
 
 
 
